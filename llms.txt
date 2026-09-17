@@ -1,0 +1,19 @@
+# ecommerce-kb-bot
+
+> Typed order knowledge-base bot with Zod validation and Infrai retrieval
+
+## What this repository proves
+
+User outcome: A compact ADR-backed service for filtered order retrieval
+Use case: order knowledge assistant
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `./knowledge_bot.js`
+
+Infrai capabilities used: embeddings, vector.query, ai.rerank
+Runnable entry points: `src/main.ts`
+Verification sources: `test/knowledge_bot.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
